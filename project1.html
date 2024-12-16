@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            background-color: #111;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+        }
+        nav .logo {
+            color: #f90;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f90;
+        }
+
+        .project-header {
+            text-align: center;
+            padding: 2rem;
+            background-color: #111;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        .project-header h1 {
+            color: #f90;
+            font-size: 2.5rem;
+        }
+        .project-header p {
+            margin-top: 0.5rem;
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        .project-gallery {
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .project-card {
+            background-color: #222;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .project-card h3 {
+            margin: 1rem 0;
+            text-align: center;
+        }
+        .project-card p {
+            padding: 0 1rem;
+            font-size: 0.9rem;
+            color: #ccc;
+            text-align: justify;
+        }
+        .back-button {
+            display: block;
+            margin: 2rem auto;
+            padding: 0.75rem 1.5rem;
+            background-color: #f90;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            width: fit-content;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            font-size: 1rem;
+        }
+        .back-button:hover {
+            background-color: #ffb84d;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">My Portfolio</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="#projects">Projects</a>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <h1>Project 1: Task Management App</h1>
+        <p>A web application designed to help users manage their tasks efficiently with a minimalistic UI.</p>
+    </section>
+
+    <!-- Project Gallery -->
+    <section class="project-gallery">
+        <div class="project-card">
+            <img src="screenshot1.jpg" alt="Screenshot 1">
+            <h3>Dashboard View</h3>
+            <p>An overview of all tasks categorized by their priority and deadlines.</p>
+        </div>
+        <div class="project-card">
+            <img src="screenshot2.jpg" alt="Screenshot 2">
+            <h3>Task Creation</h3>
+            <p>A clean and intuitive interface for adding new tasks.</p>
+        </div>
+        <div class="project-card">
+            <img src="screenshot3.jpg" alt="Screenshot 3">
+            <h3>Task Details</h3>
+            <p>Detailed view of each task with options to edit or delete.</p>
+        </div>
+        <div class="project-card">
+            <img src="screenshot4.jpg" alt="Screenshot 4">
+            <h3>Analytics</h3>
+            <p>Visualized data to track productivity and task completion rates.</p>
+        </div>
+    </section>
+
+    <!-- Back Button -->
+    <a href="home.html" class="back-button">Back to Portfolio</a>
+
+</body>
+</html>
